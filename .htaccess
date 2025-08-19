@@ -1,0 +1,9 @@
+# Redirect all requests to public directory
+RewriteEngine On
+RewriteRule ^(.*)$ public/$1 [L]
+
+# Protect sensitive files
+<FilesMatch "^\.env|composer\.(json|lock)$">
+    Order deny,allow
+    Deny from all
+</FilesMatch>

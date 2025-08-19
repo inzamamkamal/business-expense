@@ -1,0 +1,14 @@
+{
+    "name": "bts/disc-app",
+    "description": "BTS DISC 2.0 - Hotel Management System",
+    "type": "project",
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "files": ["app/helpers/functions.php"]
+    }
+}
